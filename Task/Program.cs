@@ -21,3 +21,11 @@ for (int i = 0; i < firstArray.Length; i++)
 }
 
 PrintString(firstArray);
+
+int numberOfString2 = 0;
+for (int i = 0; i < firstArray.Length; i++)
+{
+    if (firstArray[i].Length <= 3) numberOfString2++;
+}
+
+string[] secondArray = new string[numberOfString2];
