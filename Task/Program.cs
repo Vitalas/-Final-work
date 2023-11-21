@@ -11,13 +11,11 @@
 Console.Write("Введите количество строк в массиве: ");
 int numberOfString = Convert.ToInt32(Console.ReadLine());
 string[] firstArray = new string[numberOfString];
-string el = "";
 
 for (int i = 0; i < firstArray.Length; i++)
 {
     Console.Write($"Введите символы {i+1}й строки: ");
-    el = Console.ReadLine();
-    firstArray[i] = el;
+    firstArray[i] = Console.ReadLine();
 }
 
 PrintString(firstArray);
